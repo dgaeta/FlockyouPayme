@@ -13,15 +13,14 @@ import {
   Text,
   View } from "react-native";
 
-import GroupCenter from "./components/groupCenter/GroupCenter";
-
-export default class App extends React.Component<{}, {}> {
+export default class GroupCenter extends React.Component<{}, {}> {
 
   public render() {
     return (
       <View style={styles.container}>
-        <GroupCenter
-        />
+        <Text>
+          This is where the system will find out if you have a group and shit.
+        </Text>
       </View>
     );
   }
@@ -40,5 +39,3 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 });
-
-AppRegistry.registerComponent("FlockyouPayme", () => App);
